@@ -6,6 +6,18 @@
 
 In this study, we use machine learning to predict depression risk based on lifestyle and demographic factors. We analyze a dataset with a mixture of categorical and numerical features, such as age, work/study hours, and family history of mental illness. The aim is to build a model that predicts if someone is at risk of depression. Our approach includes data cleaning, feature engineering, and the use of the XGBoost algorithm. The model achieved strong performance, with an accuracy score of 0.9381 and an F1 score of 0.8252, showing its potential to help identify people at risk of depression.
 
+</br>[1. Introduction](#1-introduction)
+</br>[2. Methodology](#2-methodology)
+  - [2.1 Overview of the Dataset](#21-overview-of-the-dataset)
+  - [2.2 Data Preprocessing and Feature Engineering](#22-data-preprocessing-and-feature-engineering)
+  - [2.3 Exploratory Data Analysis](#23-exploratory-data-analysis)
+  - [2.4 Feature Encoding](#24-feature-encoding)
+  - [2.5 Model Selection and Evaluation](#25-model-selection-and-evaluation)
+
+[3. Results](#3-results)
+</br>[4. Conclusion](#4-conclusion)
+</br>[5. References](#5-references)
+
 ## 1. Introduction
 
 Depression is a common mental health problem that can have a significant impact on people's lives. Early detection of those at risk is important so they can get the help they need. Machine learning offers a way to predict depression risk by analyzing data about a person's lifestyle and background. In this study, we use a dataset that includes information such as age, work/study hours, occupation, work satisfaction, stress, and sleep patterns to predict whether someone is at risk of depression. Our goal is to build a model that can accurately make this prediction. We follow a step-by-step process, including exploring the data, cleaning it, creating new features, and training a machine learning model. The results show that our model works well, making it a useful tool for identifying people who might need support.
@@ -41,7 +53,7 @@ The dataset contains a combination of categorical and numerical features intende
 
 **Target Variable (Binary):**
 
-- Depression: Indicates whether the individual experiences depression
+</br>Depression: Indicates whether the individual experiences depression
 
 ### 2.2 Data Preprocessing and Feature Engineering
 
@@ -128,13 +140,13 @@ The XGBoost algorithm was chosen for its ability to handle mixed data types and 
 
 1. **Stratified K-Fold Cross-Validation:** The dataset was split into five folds, ensuring that the proportion of the target variable was maintained across all folds. This provided a reliable estimate of model performance and helped to prevent overfitting.
 2. **Hyperparameter Tuning:** The following hyperparameters were chosen:
-   - `n_estimators=1000` (number of boosting rounds)
-   - `learning_rate=0.01` (step size shrinkage to avoid overfitting)
-   - `max_depth=5` (maximum depth of each tree)
-   - `min_child_weight=3` (minimum sum of instance weights in a child)
-   - `subsample=0.8` (fraction of samples used for training each tree)
-   - `colsample_bytree=0.8` (fraction of features used)
-   - `gamma=0.1` (minimum loss reduction required to make a split)
+   </br>`n_estimators=1000` (number of boosting rounds)
+   </br>`learning_rate=0.01` (step size shrinkage to avoid overfitting)
+   </br>`max_depth=5` (maximum depth of each tree)
+   </br>`min_child_weight=3` (minimum sum of instance weights in a child)
+   </br>`subsample=0.8` (fraction of samples used for training each tree)
+   </br>`colsample_bytree=0.8` (fraction of features used)
+   </br>`gamma=0.1` (minimum loss reduction required to make a split)
 3. **Early Stopping:** The model was trained with early stopping, which monitored validation performance and stopped training if no improvement was seen for 50 rounds. This helped prevent overfitting and ensured the model was optimized.
 4. **Performance:** During cross-validation, the model achieved a mean AUC-ROC score of 0.9754, showing strong performance in distinguishing between individuals at risk of depression and those who are not. Finally, the model was trained on the entire training dataset to maximize data usage, and this trained model was used to make predictions on the test dataset.
 
@@ -142,9 +154,9 @@ The XGBoost algorithm was chosen for its ability to handle mixed data types and 
 
 The model's performance was evaluated on the test set using several key metrics:
 
-- **AUC-ROC score:** 0.9745, showing the model's ability to effectively distinguish between the two classes.
-- **Accuracy:** 0.9381, meaning it correctly classified 93.81% of test instances.
-- **F1-score:** 0.8252, reflecting the model's ability to balance precision and recall, especially in the context of an imbalanced dataset.
+**AUC-ROC score:** 0.9745, showing the model's ability to effectively distinguish between the two classes.
+</br>**Accuracy:** 0.9381, meaning it correctly classified 93.81% of test instances.
+</br>**F1-score:** 0.8252, reflecting the model's ability to balance precision and recall, especially in the context of an imbalanced dataset.
 
 To make predictions on the final test dataset, the model was retrained on the entire training dataset. This approach ensured that the model used all available data in the best way. The final predictions were then generated, with an accuracy score of 0.94005.
 
@@ -156,3 +168,4 @@ In conclusion, the feature encoding, model selection, and evaluation process dem
 
 1. Dr. Uthayasanker Thayasivam, PhD (U. Georgia), BSc Eng. (Hons) (Moratuwa).
 2. "Predicting Depression: Machine Learning Challenge," [Online]. Available: https://www.kaggle.com/competitions/predicting-depression-machine-learning-challenge.
+
