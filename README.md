@@ -72,35 +72,45 @@ A correlation matrix was computed for numerical features to identify relationshi
 Violin plots were used to visualize the distribution of numerical and ordinal features against the target variable (Depression). These plots provide insights into how the distributions differ between the two target classes, which can be useful for identifying patterns or anomalies.
 
 #### Numerical Features
-![](assets/05_Image_0001.jpg)
-![](assets/05_Image_0002.jpg)
-![](assets/05_Image_0003.jpg)
+
+<p align="left">
+<img src="assets/05_Image_0001.jpg" height="300px" />
+<img src="assets/05_Image_0002.jpg" height="300px" />
+<img src="assets/05_Image_0003.jpg" height="300px" />
+</p>
 
 #### Ordinal Features
-![](assets/05_Image_0004.jpg)
-![](assets/05_Image_0005.jpg)
-![](assets/06_Image_0001.jpg)
-![](assets/06_Image_0002.jpg)
-![](assets/06_Image_0003.jpg)
-![](assets/06_Image_0004.jpg)
+
+<p align="left">
+<img src="assets/05_Image_0004.jpg" height="300px" />
+<img src="assets/05_Image_0005.jpg" height="300px" />
+<img src="assets/06_Image_0001.jpg" height="300px" />
+<img src="assets/06_Image_0002.jpg" height="300px" />
+<img src="assets/06_Image_0003.jpg" height="300px" />
+<img src="assets/06_Image_0004.jpg" height="300px" />
+</p>
 
 **Count Plots for Categorical Features:**
 
 Count plots were used to visualize the distribution of categorical features with respect to the target variable. This helps in understanding the frequency of each category and its association with the target.
 
-![](assets/06_Image_0005.jpg)
-![](assets/06_Image_0006.jpg)
-![](assets/07_Image_0001.jpg)
-![](assets/07_Image_0002.jpg)
-![](assets/07_Image_0003.jpg)
+<p align="left">
+<img src="assets/06_Image_0005.jpg" height="300px" />
+<img src="assets/06_Image_0006.jpg" height="300px" />
+<img src="assets/07_Image_0001.jpg" height="300px" />
+<img src="assets/07_Image_0002.jpg" height="300px" />
+<img src="assets/07_Image_0003.jpg" height="300px" />
+</p>
 
 **Count Plots for Top-N High Cardinality Features:**
 
 For high cardinality features, count plots were generated for the most frequent categories to better understand their distribution.
 
-![](assets/07_Image_0004.jpg)
-![](assets/08_Image_0001.jpg)
-![](assets/08_Image_0002.jpg)
+<p align="left">
+<img src="assets/07_Image_0004.jpg" height="300px" />
+<img src="assets/08_Image_0001.jpg" height="300px" />
+<img src="assets/08_Image_0002.jpg" height="300px" />
+</p>
 
 ### 2.4 Feature Encoding
 
