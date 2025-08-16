@@ -18,35 +18,26 @@ The dataset contains a combination of categorical and numerical features intende
 
 **The dataset consists of the following features:**
 
-**Numerical Features:**
-
-- Age
-- Work/Study Hours: Number of hours spent working or studying
-- CGPA: Cumulative Grade Point Average
-
-**Ordinal Features:**
-
-- Academic Pressure
-- Study Satisfaction
-- Work Pressure
-- Job Satisfaction
-- Financial Stress
-
-**Categorical Features:**
-
-- Gender
-- Working Professional or Student
-- Dietary Habits
-- Have you ever had suicidal thoughts?
-- Family History of Mental Illness
-- Sleep Duration (later converted to an ordinal feature)
-
-**Categorical Features (High Cardinality):**
-
-- Name
-- City: City of residence
-- Profession: Professional occupation
-- Degree: Educational degree held by the individual
+| Feature Type                      | Feature Name                                   | Description                                         |
+|---------------------------|------------------------------------------------|-----------------------------------------------------|
+| **Numerical**             | Age                                            | Age of the individual                               |
+|                                    | Work/Study Hours                               | Number of hours spent working or studying           |
+|                                    | CGPA                                           | Cumulative Grade Point Average                      |
+| **Ordinal**               | Academic Pressure                              | Level of academic pressure                          |
+|                                    | Study Satisfaction                             | Satisfaction with studies                           |
+|                                    | Work Pressure                                  | Level of work pressure                              |
+|                                    | Job Satisfaction                               | Satisfaction with job                               |
+|                                    | Financial Stress                               | Level of financial stress                           |
+| **Categorical**           | Gender                                         | Gender of the individual                            |
+|                                    | Working Professional or Student                | Employment or student status                        |
+|                                    | Dietary Habits                                 | Dietary preferences                                 |
+|                                    | Suicidal Thoughts                              | History of suicidal thoughts                        |
+|                                    | Family History of Mental Illness               | Family history of mental illness                    |
+|                                    | Sleep Duration                                 | Sleep duration (later converted to ordinal feature) |
+| **Categorical (High Cardinality)** | Name                                   | Name of the individual                              |
+|                                    | City                                           | City of residence                                   |
+|                                    | Profession                                     | Professional occupation                             |
+|                                    | Degree                                         | Educational degree held                             |
 
 **Target Variable (Binary):**
 
@@ -74,42 +65,42 @@ In the end, columns considered not relevant to the analysis, like "Name" and "Sl
 
 A correlation matrix was computed for numerical features to identify relationships between them. This helps in understanding how features interact with each other and can guide feature selection or engineering.
 
-![](assets\04_Image_0001.jpg)
+![](assets/04_Image_0001.jpg)
 
 **Violin Plots for Numerical and Ordinal Features:**
 
 Violin plots were used to visualize the distribution of numerical and ordinal features against the target variable (Depression). These plots provide insights into how the distributions differ between the two target classes, which can be useful for identifying patterns or anomalies.
 
 #### Numerical Features
-![](assets\05_Image_0001.jpg)
-![](assets\05_Image_0002.jpg)
-![](assets\05_Image_0003.jpg)
+![](assets/05_Image_0001.jpg)
+![](assets/05_Image_0002.jpg)
+![](assets/05_Image_0003.jpg)
 
 #### Ordinal Features
-![](assets\05_Image_0004.jpg)
-![](assets\05_Image_0005.jpg)
-![](assets\06_Image_0001.jpg)
-![](assets\06_Image_0002.jpg)
-![](assets\06_Image_0003.jpg)
-![](assets\06_Image_0004.jpg)
+![](assets/05_Image_0004.jpg)
+![](assets/05_Image_0005.jpg)
+![](assets/06_Image_0001.jpg)
+![](assets/06_Image_0002.jpg)
+![](assets/06_Image_0003.jpg)
+![](assets/06_Image_0004.jpg)
 
 **Count Plots for Categorical Features:**
 
 Count plots were used to visualize the distribution of categorical features with respect to the target variable. This helps in understanding the frequency of each category and its association with the target.
 
-![](assets\06_Image_0005.jpg)
-![](assets\06_Image_0006.jpg)
-![](assets\07_Image_0001.jpg)
-![](assets\07_Image_0002.jpg)
-![](assets\07_Image_0003.jpg)
+![](assets/06_Image_0005.jpg)
+![](assets/06_Image_0006.jpg)
+![](assets/07_Image_0001.jpg)
+![](assets/07_Image_0002.jpg)
+![](assets/07_Image_0003.jpg)
 
 **Count Plots for Top-N High Cardinality Features:**
 
 For high cardinality features, count plots were generated for the most frequent categories to better understand their distribution.
 
-![](assets\07_Image_0004.jpg)
-![](assets\08_Image_0001.jpg)
-![](assets\08_Image_0002.jpg)
+![](assets/07_Image_0004.jpg)
+![](assets/08_Image_0001.jpg)
+![](assets/08_Image_0002.jpg)
 
 ### 2.4 Feature Encoding
 
